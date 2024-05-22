@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Calibración y programación | PonchoBot siguelíneas </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">PonchoBot siguelíneas</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li id="active"><a href="calibracin_y_programacin.html" class="active daddy">Calibración y programación</a>
+   <ul>
+      <li><a href="a_experimentar.html" class="no-ch">A experimentar</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>3</strong></span> <span class="sep">| </span><a href="a_experimentar.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Calibración y programación</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ajustando los sensores IR</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_127_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>1°</h2>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>Calibrar los IR con su potenciómetro</strong></span></p>
+<p>Es necesario <strong>calibrar la sensibilidad</strong> de las 3 placas IR, para <strong>detectar</strong> correctamente <strong>superficies claras y oscuras</strong>. Para ello el <span style="color: #0000ff;"><strong>Tcrt5000</strong></span> trae un <strong>potenciómetro</strong> y <strong>dos leds</strong> que me ayudan en la tarea. Para proceder a la calibración hacer:</p>
+<table border="1" style="width: 100%;" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 48.7627%;"><img src="Animacion_calibracion_Tcrt5000.gif" alt="" width="418" height="393" /></td>
+<td style="width: 51.2373%;">
+<ul>
+<li><span style="font-size: 10pt;">1.- Ubicar el <span style="background-color: #ffffff;"><strong>sensor IR sobre un papel blanco</strong></span> y observar si se <strong>prenden ambos led</strong>. Si no es así ajustar el potenciómetro con un destornillador o punta en cruz hasta que ambos led estén encendidos.</span></li>
+<li><span style="font-size: 10pt;">2.- Ubicar el <span style="background-color: #000000; color: #ffffff;">sensor IR sobre un papel o cinta negra</span> y observar si <strong>uno de los led se apaga</strong>. Si no es así ajustar con un destornillador o punta en cruz el potenciómetro hasta que uno de los led esté apagado.</span></li>
+</ul>
+<p><span style="color: #800080; font-size: 10pt;"><strong>Volver a comprobar ambos procedimientos hasta que se cumpla que:</strong></span></p>
+<ul>
+<li><span style="font-size: 10pt;"><span style="background-color: #ffffff;">1.- en una superficie blanca</span> ambos led se encienden.</span></li>
+<li><span style="font-size: 10pt;"><span style="color: #ffffff; background-color: #000000;">2.- en una superficie negra</span> un solo led se enciende. </span></li>
+</ul>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong><span style="font-size: 10pt;">Este procedimiento debe realizarse en los 3 sensores IR.</span></strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>2°</h2>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>Valores que entregan los IR</strong></span></p>
+<p>Para <strong>conocer los valores </strong>que los sensores IR entregan -al estar sobre una superficie <strong>clara</strong> y una <span style="color: #ffffff; background-color: #333333;">negra</span>- <span style="color: #ff6600;"><strong>PonchoBot</strong></span> te <strong>ayuda</strong> a través de un programa realizado con <strong>Pictoblox</strong>. Siguiendo las <strong>instrucciones</strong>, al final del proceso, los 3 sensores IR quedan listos para que <span style="color: #ff6600;"><strong>PonchoBot</strong></span> pueda ser programado, y seguir una <span style="background-color: #000000; color: #ffffff;">línea negra</span> sin perderse en el camino. A continuación una animación del funcionamiento de dicho programa:</p>
+<p><video width="495" height="495" style="display: block; margin-left: auto; margin-right: auto;" controls="controls">
+<source src="Calibracion_del_Tcrt5000_con_Pictoblox_y_video.mp4" type="video/mp4" /></video></p>
+<p><em><span style="color: #800000;"><strong>En definitiva podemos concluir que en los 3 sensores, cualquier valor por encima de 40-50, nos asegura que el sensor está ubicado sobre una línea negra. Nosotros utilizaremos para asegurarnos el valor de 40. </strong></span></em></p>
+<h2>3°</h2>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>Estructura general de la programación de PonchoBot usando los valores obtenidos</strong></span></p>
+<p>En la programación vamos a <strong>anidar bloques</strong> condicionales <span style="color: #ffffff; background-color: #ff9900;"><strong> si ... entonces - si no</strong> </span><span style="color: #000000;"> para que <strong><span style="color: #ff6600;">PonchoBot</span></strong><span style="color: #000000;"> tome una sola decisión en cada ciclo <strong><span style="color: #ffffff; background-color: #ff9900;"> repetir hasta que ... </span></strong>. Vamos a crear nuestros bloques para darle mayor claridad a la programación y facilitar su lectura y corrección.</span></span></p>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 56.1798%;"><img src="img2.png" width="487" height="662" alt="" /></td>
+<td style="width: 43.8202%;">
+<p><span style="font-size: 10pt;">Vemos que <strong>todas las condiciones</strong> tienen que ver con el estado de los sensores IR derecho-centro-izquierdo (<em><strong>SD-SC-SI</strong></em>).</span></p>
+<p><span style="font-size: 10pt;">Siempre <strong>se consultan</strong> por el estado de los 3 sensores, para poder <strong>a futuro</strong>, complejizar el circuito con cruces y curvas en ángulos rectos.  </span></p>
+<p><span style="font-size: 10pt;">Si <strong>SC es &gt; 40</strong> (<em>está sobre <span style="color: #ffffff; background-color: #333333;">la línea negra</span></em>) entonces se debe seguir en línea recta.</span></p>
+<p><span style="font-size: 10pt;">Si <strong>SI es &gt; 40</strong> (está sobre <span style="background-color: #333333; color: #ffffff;">la línea negra</span>) entonces se debe avanzar girando levemente hacia la izquierda. </span></p>
+<p><span style="font-size: 10pt;">Si <strong>SD</strong> <strong>es &gt; 40</strong> (está sobre <span style="background-color: #333333; color: #ffffff;">la línea negra</span>) entonces se debe avanzar girando levemente hacia la derecha. </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>4°</h2>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>Programación de <span style="color: #ffffff; background-color: #ff0000;">Mis bloques</span> usando % de velocidad</strong></span></p>
+<table border="1" style="height: 127px; width: 90.8762%;"><caption><span style="background-color: #3366ff; color: #ffffff;"><em><span style="font-size: 8pt; background-color: #3366ff;">Usar las tablas si se desea mayor precisión, sino usar el <strong>Truquito</strong> </span></em></span></caption>
+<tbody>
+<tr style="height: 127px;">
+<td style="width: 44.7479%; height: 127px;">
+<p style="text-align: center;"><span style="color: #800000;"><strong>Tabla 1: % velocidades del motor izquierdo</strong></span></p>
+<table border="1" style="width: 380px; height: 72px;">
+<tbody>
+<tr style="height: 72px;">
+<td style="width: 370.994px; text-align: center; height: 72px;"><google-sheets-html-origin>
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" height="73" style="height: 73px; width: 371px; background-color: #f5bc5b;"><colgroup><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /></colgroup>
+<tbody>
+<tr>
+<td style="width: 42.1165px;"><strong>Valor</strong> </td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:180}" style="width: 31.2216px;">180</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:171}" style="width: 25.1847px;">171</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:162}" style="width: 28.196px;">162</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:153}" style="width: 29.2045px;">153</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:144}" style="width: 30.2131px;">144</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:135}" style="width: 29.2045px;">135</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:126}" style="width: 28.196px;">126</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:117}" style="width: 25.1847px;">117</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:108}" style="width: 31.2216px;">108</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:99}" style="width: 24.1619px;">99</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:90}" style="width: 23.2528px;">90</td>
+</tr>
+<tr>
+<td style="width: 42.1165px;"><span style="color: #800000;"><strong>%V</strong><strong>el.</strong></span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:100}" style="width: 31.2216px;"><span style="color: #800000;">100</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:90}" style="width: 25.1847px;"><span style="color: #800000;">90</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:80}" style="width: 28.196px;"><span style="color: #800000;">80</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:70}" style="width: 29.2045px;"><span style="color: #800000;">70</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:60}" style="width: 30.2131px;"><span style="color: #800000;">60</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:50}" style="width: 29.2045px;"><span style="color: #800000;">50</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:40}" style="width: 28.196px;"><span style="color: #800000;">40</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:30}" style="width: 25.1847px;"><span style="color: #800000;">30</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:20}" style="width: 31.2216px;"><span style="color: #800000;">20</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:10}" style="width: 24.1619px;"><span style="color: #800000;">10</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0}" style="width: 23.2528px;"><span style="color: #800000;">0</span></td>
+</tr>
+</tbody>
+</table>
+</google-sheets-html-origin></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 46.1295%; height: 127px;"><google-sheets-html-origin>
+<style type="text/css"><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--></style>
+<p style="text-align: center;"><span style="color: #800000;"><strong>Tabla 2: % velocidades del motor derecho</strong></span></p>
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" width="380" height="83" style="width: 380px; background-color: #54b4f0;"><colgroup><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /><col width="25" /></colgroup>
+<tbody>
+<tr>
+<td style="width: 32.1591px;"><strong>Valor</strong></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:100}" style="width: 36.5341px;">0</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:90}" style="width: 29.446px;">9</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:80}" style="width: 29.4886px;">18</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:70}" style="width: 29.2188px;">27</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:60}" style="width: 29.446px;">36</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:50}" style="width: 29.4034px;">45</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:40}" style="width: 29.4886px;">54</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:30}" style="width: 29.3892px;">63</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:20}" style="width: 29.3182px;">72</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:10}" style="width: 28.9347px;">81</td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0}" style="width: 29.5312px;">90</td>
+</tr>
+<tr>
+<td style="width: 32.1591px;"><span style="color: #800000;">%Vel.</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0}" style="width: 36.5341px;"><span style="color: #800000;">100</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:9}" style="width: 29.446px;"><span style="color: #800000;">90</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:18}" style="width: 29.4886px;"><span style="color: #800000;">80</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:27}" style="width: 29.2188px;"><span style="color: #800000;">70</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:36}" style="width: 29.446px;"><span style="color: #800000;">60</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:45}" style="width: 29.4034px;"><span style="color: #800000;">50</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:54}" style="width: 29.4886px;"><span style="color: #800000;">40</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:63}" style="width: 29.3892px;"><span style="color: #800000;">30</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:72}" style="width: 29.3182px;"><span style="color: #800000;">20</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:81}" style="width: 28.9347px;"><span style="color: #800000;">10</span></td>
+<td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:90}" style="width: 29.5312px;"><span style="color: #800000;">0</span></td>
+</tr>
+</tbody>
+</table>
+</google-sheets-html-origin></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 10pt;"><span style="color: #ff0000;"><strong>Truquito: <span style="color: #000000;">Si quiero disminuir igual % de velocidad en los dos motores, partiendo de 90 (parado): <em>lo mismo que le sumo al izquierdo le resto al derecho. Ejemplos:</em></span></strong></span></span></p>
+<ul>
+<li><span style="font-size: 10pt;">Si quiero que ambos motores funcionen a un 10% de su velocidad, <span style="color: #800000;"><span style="color: #000000;">al</span></span><span style="color: #800000;"> </span><span style="color: #000000;"><strong>izquierdo le sumo</strong> <span style="font-size: 12pt;"><strong>10</strong></span>: 90+<span style="background-color: #800000; color: #ffffff;">10</span>=<span style="font-size: 12pt;">100</span></span> y al <strong>derecho le resto</strong> <span style="font-size: 12pt;"><strong>10</strong></span>: 90-<span style="background-color: #800000; color: #ffffff;">10</span>=<span style="font-size: 12pt;">80</span></span></li>
+<li><span style="font-size: 10pt; color: #000000;">Si quiero <strong>mas % de vel.</strong> <strong>del izquierdo</strong> (<em>para girar a la derecha</em>), <strong>sumo</strong> <strong>más</strong>: 90+<span style="background-color: #800000; color: #ffffff;"><strong>20</strong></span>=<span style="font-size: 12pt;">110</span> y al <strong>derecho resto menos</strong>: 90-<span style="background-color: #800000; color: #ffffff;"><strong>10</strong></span> =<span style="font-size: 12pt;">80</span></span></li>
+<li><span style="font-size: 10pt; color: #000000;">Si quiero <strong>menos % de vel. del izquierdo</strong> (<em>para girar a la izquierda</em>), <strong>sumo menos</strong>: 90+<span style="background-color: #800000; color: #ffffff;"><strong>10</strong></span>=<span style="font-size: 12pt;">100</span> y al derec<strong>ho resto más</strong>: 90-<span style="background-color: #800000; color: #ffffff;"><strong>20</strong></span>=<span style="font-size: 12pt;">70</span> </span></li>
+</ul>
+<table border="1" style="width: 94.8308%;">
+<tbody>
+<tr>
+<td style="width: 68.128%;">
+<p style="text-align: center;"><span style="font-size: 14pt; color: #ffffff; background-color: #ff0000;">1. Avanzar_recto</span></p>
+<ul>
+<li><span style="font-size: 10pt;">El bloque <span style="color: #ffffff; background-color: #99cc00;"> set servo on (10) to (100) </span> (aproximadamente 99, <em><strong>ver tabla 1</strong></em>) indica que el motor izquierdo (<span style="color: #ff9900;">conectado en el pin 10</span>) va a girar a una velocidad aproximada del 10% de la máxima. Recordar que 180 es la máxima velocidad y 90 es para detener el motor.</span></li>
+<li><span style="font-size: 10pt;">El bloque <span style="color: #ffffff; background-color: #99cc00;"> set servo on (11) to (80) </span> (aproximadamente 81, <em><strong>ver tabla 2</strong></em>) indica que el motor derecho (<span style="color: #ff9900;">conectado en el pin 11</span>) va a girar a una velocidad aproximada del 10% de la máxima. Recordemos que 0 es la máxima velocidad y 90 es para detener el motor.</span></li>
+<li><strong><span style="font-size: 10pt;">En definitiva los dos motores están girando a la misma velocidad, haciendo que <span style="color: #ff6600;">PonchoBot</span> siga en línea recta.</span></strong></li>
+</ul>
+<p><img src="img3.png" width="605" height="491" alt="" style="float: left;" /></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><span style="font-size: 10pt;"></span></p>
+<p><span style="font-size: 10pt;"></span></p>
+<p style="text-align: center;"><span style="font-size: 14pt; color: #ffffff; background-color: #ff0000;">3. Avanzar_con_giro_Izquierdo</span></p>
+<ul>
+<li><span style="font-size: 10pt;">El bloque <span style="color: #ffffff; background-color: #99cc00;"> set servo on (10) to (100) </span> (aproximadamente 99, <em><strong>ver tabla 1</strong></em>) indica que el motor izquierdo (<span style="color: #ff9900;">conectado en el pin 10</span>) va a girar a una velocidad aproximada del 10% de la máxima. Recordar que 180 es la máxima velocidad y 90 es para detener el motor.</span></li>
+<li><span style="font-size: 10pt;">El bloque <span style="color: #ffffff; background-color: #99cc00;"> set servo on (11) to (70) </span> (aproximadamente 72, <em><strong>ver tabla 2</strong></em>) indica que el motor derecho (<span style="color: #ff9900;">conectado en el pin 11</span>) va a girar a una velocidad aproximada del 20% de la máxima.</span></li>
+<li><span style="font-size: 10pt;"> <strong>En definitiva, el motor derecho gira más rápido que el izquierdo produciendo un leve giro hacia la izquierda de</strong> <span style="color: #ff6600;"><strong>PonchoBot</strong></span>.</span></li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 10pt;"><img src="giro_a_la_izquierda.png" width="171" height="147" /></span></p>
+</td>
+<td style="width: 26.7035%;">
+<p style="text-align: center;"><span style="font-size: 14pt; color: #ffffff; background-color: #ff0000;">2. <span style="font-size: 12pt;">Avanzar_con_giro_Derecha</span></span></p>
+<ul>
+<li><span style="font-size: 10pt;">El bloque <span style="color: #ffffff; background-color: #99cc00;"> set servo on (10) to (110) </span> (aproximadamente 108, <em><strong>ver tabla 1</strong></em>) indica que el motor izquierdo (<span style="color: #ff9900;">conectado en el pin 10</span>) va a girar a una velocidad aproximada del 20% de la máxima. </span></li>
+<li><span style="font-size: 10pt;">El bloque <span style="color: #ffffff; background-color: #99cc00;"> set servo on (11) to (80) </span> (aproximadamente 81, <em><strong>ver tabla 2</strong></em>) indica que el motor derecho (<span style="color: #ff9900;">conectado en el pin 11</span>) va a girar a una velocidad aproximada del 10% de la máxima.</span></li>
+<li><span style="font-size: 10pt;"><strong>En definitiva, el motor izquierdo gira más rápido que el derecho produciendo un leve giro hacia la derecha de</strong> <span style="color: #ff6600;"><strong>PonchoBot</strong></span>.</span></li>
+</ul>
+<p><span style="font-size: 10pt;"><img src="giro_a_la_derecha.png" width="171" height="147" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<style type="text/css"><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--></style></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id4">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ficheros adjuntos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_82" class="block iDevice_content">
+<ol>
+<li><a href="https://drive.google.com/uc?export=download&amp;id=1plTpMMefUUWulU23V0omuKtGTdBFfnXA" title="[.sb3 - 1.5 MB]">Descargar programa de ejemplo Prueba de sensores IR</a><span class="exe-link-data file-size"> (.sb3 - 1.5 <abbr title="MegaBytes" lang="en">MB</abbr>)</span></li>
+<li><a href="https://drive.google.com/uc?export=download&amp;id=1kdj8HZ3AwhuTdrBF6WiSTKUx0-CMJFZf" title="[.sb3 - 57 KB]">Descargar programa de ejemplo PonchoBot siguelínea</a><span class="exe-link-data file-size"> (.sb3 - 57 <abbr title="KiloBytes" lang="en">KB</abbr>)</span></li>
+</ol>
+</div>
+<ul class='exeFileList'></ul></div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>3</strong></span> <span class="sep">| </span><a href="a_experimentar.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

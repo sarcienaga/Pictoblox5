@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>A experimentar | PonchoBot siguelíneas </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-2"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">PonchoBot siguelíneas</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li class="current-page-parent"><a href="calibracin_y_programacin.html" class="current-page-parent daddy">Calibración y programación</a>
+   <ul>
+      <li id="active"><a href="a_experimentar.html" class="active no-ch">A experimentar</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="calibracin_y_programacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>3</strong> de <strong>3</strong></span>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">A experimentar</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Algunas ideas para mejorar el siguelínea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Hay que <strong>tener siempre presente</strong>, como en todo proyecto de ciencia, que los valores que nos entregan los sensores y que se asignan a los motores, tienen una razón <strong>teórica como experimental</strong>. Porque sus comportamientos presentan <strong>pequeñas diferencias</strong> entre sensores/motores del mismo modelo, pero diferentes partidas y/o fabricantes.</p>
+<p>Por ello, si <span style="color: #ff6600;"><strong>PonchoBot</strong></span> no sigue correctamente la línea hay que comenzar a probar otros valores a los propuestos, siguiendo un <strong>orden</strong>, como por ej:</p>
+<ol>
+<li>Ver de <strong>reducir</strong> un poco más los valores de velocidad de los motores, esto le permite a los sensores tener el tiempo necesario para "diferenciar" la superficie blanca de la línea negra (<em>tener presente <strong>el truquito</strong></em>)<strong>.</strong></li>
+<li><strong>Controlar nuevamente</strong> el valor al cual los sensores IR detectan la superficie blanca y <strong>no la línea negra</strong> (<em>en el ej. es menos de 40</em>), podría ser un número mayor o menor.</li>
+<li>Hacer las <strong>primeras pruebas</strong> con líneas rectas y luego con curvas leves. Para curvas más cerradas (90°), hay que comenzar a colocar más condiciones anidadas, para que <span style="color: #ff6600;"><strong>PochoBot</strong></span> sea detenga, gire sobre su eje (una rueda gira en un sentido y la otra en el otro), hasta "<strong>encontrar</strong>" nuevamente la <span style="color: #ffffff; background-color: #333333;">línea negra</span> con su sensor IR del centro. </li>
+</ol>
+<p style="text-align: center;"><span style="font-size: 18pt; color: #ff6600;"><em><strong>¡¡Manos a la obra!!</strong></em></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Truquito</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_128_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><span style="font-size: 8pt;"><span style="text-decoration: underline;"><strong>Regla:</strong></span> <span style="color: #ff0000;"><em>Si quiero disminuir igual % de velocidad en los dos motores, partiendo de 90 (parado): lo mismo que le sumo al izquierdo le resto al derecho</em></span>. Ejemplos:</span>
+<ul>
+<li><span style="font-size: 8pt;">Si quiero que ambos motores funcionen a un 10% de su velocidad, al izquierdo le sumo 10: 90+10=100 y al derecho le resto10:  90-10=80</span></li>
+<li><span style="font-size: 8pt;">Si quiero mas % de vel. del izquierdo (para girar a la derecha), sumo más: 90+20=110 y al derecho le resto menos: 90-10 =80 </span></li>
+<li><span style="font-size: 8pt;">Si quiero menos % de vel. del izquierdo (para girar a la izquierda), sumo menos: 90+10=100 y al derecho le resto más: 90-20=70</span></li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="calibracin_y_programacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>3</strong> de <strong>3</strong></span>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
